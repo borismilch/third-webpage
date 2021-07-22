@@ -1,0 +1,196 @@
+.giftset {
+    position: relative;
+    background-color: rgba(218, 218, 218, 1);
+    &::after{
+        content: "";
+        position: absolute;
+        background-color: rgba(249, 251, 255, 1);
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 35%;
+        z-index: 1;
+    }
+}
+
+.giftset-head {
+    z-index: 10;
+		// .giftset-head__sub
+
+		&__sub {
+            @include adaptiv-font(20, 18);
+            line-height: 120%;
+            color: $main;
+            font-weight: 600;
+            z-index: 100;
+            font-family: $naruto;
+            padding: 6px 0px
+		}
+
+		// .giftset-head__title
+
+		&__title {
+            @include adaptiv-font(30, 24);
+            line-height: 120%;
+            color: $black;
+            font-weight: 900;
+            font-family: $naruto;
+		}
+}
+.giftset-body{
+    z-index: 3;
+}
+.giftset-body-item {
+    
+    border-radius: 2px;
+    padding: 64px 66px 72px 66px;
+    background-color: white;
+    display: none !important;
+    box-shadow: 2px 0px 0px rgba(0, 0, 0, 0.795);
+    &.active{
+          display: flex !important;
+          @media (max-width: 990px) {
+            display: block !important;
+          }
+    }
+    @media (max-width:580px) {
+        padding: 8% 4%;
+    }
+		// .giftset-body-item__img
+
+		&__img img{
+            max-width: 100%;
+            background-color: transparent;
+		}
+        
+		// .giftset-body-item__content
+
+		&__content {
+            display: flex;
+            flex-direction: column;
+            max-width: 430px;
+           @media (max-width: 768px) {
+               max-width: 100%;
+           }
+		}
+
+		// .giftset-body-item__price
+
+		&__price {
+            color: $second;
+            @include adaptiv-font(20, 18);
+            font-weight: 600;
+            font-family: $naruto;
+            line-height: 120%;
+            padding: 12px 0px;
+		}
+
+		// .giftset-body-item__title
+
+		&__title {
+
+            @include adaptiv-font(24, 22);
+        font-family: $naruto;
+        color: $black;
+        font-weight: 700;
+        line-height: 140%;
+		}
+
+		// .giftset-body-item__desc
+
+		&__desc {
+            padding: 12px 0px;
+            @include adaptiv-font(16, 13);
+            font-family: $naruto;
+            color: $black;
+            font-weight: 300;
+            line-height: 120%;
+		}
+
+		// .giftset-body-item__btn
+
+		&__btn {
+            padding: 8px 32px 11px 33px;
+            
+		}
+
+		// .giftset-body-item__btn2
+
+		&__btn2 {
+            padding: 8px 32px 11px 33px;
+		}
+}
+.giftset-body-item-icons {
+    padding: 12px 0px 24px 0px;
+    justify-content: space-between !important;
+		// .giftset-body-item-icons__icon
+
+		&__icon {
+            display: flex;
+		}
+
+		// .giftset-body-item-icons__text
+
+		&__text {
+            display: flex;
+            flex-direction: column;
+		}
+
+		// .giftset-body-item-icons__title
+
+		&__title {
+            font-size: 16px;
+            font-weight: 300;
+            font-family: $naruto;
+            line-height: 140%;
+
+		}
+
+		// .giftset-body-item-icons__subtitle
+
+		&__subtitle {
+            font-size: 16px;
+            font-weight: 700;
+            font-family: $naruto;
+            line-height: 140%;
+		}
+}
+
+.products-item-buttons {
+ justify-content: space-between;
+	
+}
+
+.giftset-body-tabs {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @media (max-width:768px) {
+        flex-direction: row !important;
+    }
+		// .giftset-body-tabs__tab
+
+		&__tab {
+                  color: $main;
+                  text-decoration: none;
+            display: flex;
+            background-color: rgba(237, 240, 245, 0.8);
+            padding: 6px 39px;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: 900;
+            transition: all 0.3s linear;
+            font-family: $monser;
+            flex: 1 0 auto;
+            &:hover{
+                  color: $black;
+            }
+            &.active{
+                background-color: #fff;
+                border-bottom: 1px solid $main;
+
+            }
+		}
+}
+

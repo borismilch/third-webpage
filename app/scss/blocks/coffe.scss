@@ -1,0 +1,63 @@
+
+
+.coffe-head {
+
+		// .coffe-head__sub
+
+		&__sub {
+            color: $main;
+            @include adaptiv-font(20, 16);
+            font-family: $naruto;
+            font-weight: 300;
+            line-height: 150%;
+		}
+
+		// .coffe-head__title
+
+		&__title {
+            color: $main;
+            @include adaptiv-font(30, 24);
+            font-family: $monser;
+            font-weight: 900;
+            line-height: 120%;
+
+		}
+}
+
+.coffe-body {
+
+		// .coffe-body__item
+    & img{
+        height: 80px;
+        width: 80px;
+    }
+		&__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 40px;
+		}
+
+		// .coffe-body__text
+
+		&__text {
+            padding: 30px 0px 25px 0px;
+            font-family: $naruto;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 150%;
+            color: $black;
+		}
+
+		// .coffe-body__title
+
+		&__title {
+          
+            font-family: $naruto;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 150%;
+            color: $black;
+		}
+}
+

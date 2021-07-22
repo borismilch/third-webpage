@@ -1,0 +1,119 @@
+.combo-body{
+    padding-bottom: 15%;
+    overflow: visible;
+    
+}
+.combo{
+    .swiper-slide-duplicate-prev{
+        transition: all 1.9s ease;
+        opacity: 0.6;
+        &::after{
+            border-radius: 0px;
+            background-color: #415167b2;
+
+        }
+        @media (max-width:720px) {
+            opacity: 1;
+            &::after{
+                display: none;
+            }
+        }
+    }
+    @media (max-width:550px) {
+       
+        .swiper-slide{
+            transition: all  1.7s  ease !important;
+            opacity: 0.1;
+        }
+        .swiper-slide-active{
+            opacity: 1;
+        }
+    }
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 30%;
+        background-color: $main;
+        z-index: -1;
+
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 13%;
+        background-color: #f9fbff;
+        z-index: 10;
+        @media(max-width:580px){
+            display: none;
+        }
+    }
+    &__btn{
+        position: absolute;
+        width: 54px;
+        height: 54px;
+        background-color: $second;
+        border-radius: 52%;
+        display: flex;
+        top: 35%;
+        z-index: 10;
+        outline: none;
+
+        right: 1%;
+        justify-content: center;
+        transition: all 0.3s ease;
+        align-items: center;
+        &:hover{
+              transform: scale(1.1);
+        }
+        & img{
+            width: 20px;
+            height: 20px;
+      }
+    }
+}
+.combo-item {
+    max-width: 360px;
+    margin: 0px 22px;
+    @media (max-width:550px) {
+        margin: 20px 0px;
+        .swiper-slide{
+            opacity: 0.5;
+        }
+        .swiper-slide-active{
+            opacity: 1;
+        }
+    }
+    // .combo-item__content
+    & img{
+        max-width: 100%;
+    }
+    &__content {
+        padding: 36px 42px 44px 42px;
+    }
+    .swiper-slide-active{
+        box-shadow: 0px 0px 20px $black;
+    }
+    // .combo-item__sub
+
+    &__sub {
+        padding: 10px 0px 22px 0px;
+        @include adaptiv-font(15, 13)
+    }
+    &__price{
+        
+        & span{
+            color: rgba(65, 81, 103, 0.7);
+            text-decoration: line-through;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 300;
+        }
+    }
+}

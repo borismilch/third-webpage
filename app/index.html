@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css\style.min.css">
+  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="body">
+
+
+
+
+  <nav class=" header navbar navbar-light navbar-expand-lg fixed-top d-flex ">
+    <div class="container-lg">
+      <a class="navbar-brand"><img src="images/1/revo_logo.svg" alt=""></a>
+      <ul class="navbar-nav d-none d-lg-flex">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">TRANG CHỦ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">COFFEE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">PHIN MẠ MÀU</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">COMBO PHIN PHÊ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">GIFTSET</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">LIÊN HỆ</a>
+        </li>
+      </ul>
+      <div class="header__icon d-flex align-items-center">
+      
+       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"  aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+
+       
+      </button>
+      <div class="cart-parent">
+      <img src="images/1/trolley (1).svg" class="text-dark cart2 cart" alt="">
+      <span class="quantity__indicator">0</span>
+     
+    </div>
+    <div class="storage" id="storage">
+      <ul class="storage-content">
+         <!-- <li class="storage-item d-flex "> 
+          <div class="storage-item__img d-flex flex-column">
+            <img src="images/else/image2.jpg" class="" alt="">
+            <div class="storage-item-actions d-flex">
+              <div class="storage-item-actions__minus">
+                <img src="images/storage/minus-sign.svg" alt="">
+              </div>
+             
+              <div class="storage-item-actions__count">1</div>
+              <div class="storage-item-actions__plus">
+                <img src="images/storage/plus.svg" alt="">
+              </div>
+            </div>
+        </div>
+        <div class="storage-item__content">
+          <div class="d-flex">
+          <div class="storage-item__price">99.000 </div>
+          <span class="storage-item__price2">149.000</span>
+        </div>
+          <div class="storage-item__name">REVO Morning</div>
+          <div class="storage-item__desc">đắng, hậu ngọt, hương hoa </div>
+        </div>
+        <div class="storage-item__trash">
+          <img src="images/storage/rubbish-bin.svg" alt="">
+        </div>
+      </li>   -->
+    </ul>
+      <div class="storage-footer  d-flex">
+        <div class="storage-footer__count">1</div>
+        <span class="storage-footer__sum">99.00</span>
+        <button class="btn storage-footer__btn">Купити</button>
+      </div>
+    </div>
+    </div>
+    
+  </nav>
+ <div class="wrapper">
+<div class="page">
+  <div class="page-text">
+    <div class="page-text__text">
+      <div class="page-text__logo d-none d-md-block">
+        <img src="images/1/revo_logo.svg" alt="">
+      </div>
+      <div class="page-text__sub"><div class="page-text__subb">
+        YOUR <span>PERSONALIZED</span> COFFEE</div>
+      </div>
+   
+    </div>
+  </div>
+  <div class="page-img">
+    <img src="images/1/01.jpg" class="imega1" alt="">
+    <div class="page-img__btn" type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      <img src="images/1/play.svg" class="" alt="">
+    </div>
+  </div>
+  <div class="page-menu d-md-flex d-none">
+    <div class="page-menu__cart cart-paren">
+      <div class="cart-parent" data-bs-toggle="collapse" data-bs-target="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+      <img src="images/1/Shape.svg" class="cart" alt="">
+      <span class="quantity__indicator ">0</span>
+    </div>
+  </div>
+    <div class="page-menu__content">
+    
+      <div class="page-menu-navs">
+        <p class="page-menu-navs__title"><span>TRANG CHỦ</span></p>
+        <nav class="page-menu-navs__item"> <span>COFFEE</span> </nav>
+        <nav class="page-menu-navs__item"> <span>PHIN MẠ MÀU</span> </nav>
+        <nav class="page-menu-navs__item"> <span>COMBO PHIN PHÊ</span> </nav>
+        <nav class="page-menu-navs__item"> <span>GIFTSET</span> </nav>
+        <nav class="page-menu-navs__item"> <span>LIÊN HỆ</span> </nav>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  
+    
+    <button type="button" class="btn-close text-reset close1" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+ 
+  
+    <div class="page-menu offcanvas-body">
+      <div class="page-menu__cart">
+        <img src="images/1/Shape.svg" alt="">
+      </div>
+      <div class="page-menu__content">
+      
+        <div class="page-menu-navs">
+          <p class="page-menu-navs__title"><span>TRANG CHỦ</span></p>
+          <nav class="page-menu-navs__item"> <span>COFFEE</span> </nav>
+          <nav class="page-menu-navs__item"> <span>PHIN MẠ MÀU</span> </nav>
+          <nav class="page-menu-navs__item"> <span>COMBO PHIN PHÊ</span> </nav>
+          <nav class="page-menu-navs__item"> <span>GIFTSET</span> </nav>
+          <nav class="page-menu-navs__item"> <span>LIÊN HỆ</span> </nav>
+        </div>
+      </div>
+    </div>
+ 
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <video
+      src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+      poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+      width="620" muted autoplay>
+  </video>
+      
+    </div>
+  </div>
+</div>
+<div class="container-lg">
+<div class="coffe py-5 ">
+  <div class="coffe-head text-center shows pb-5">
+    <div class="coffe-head__sub">Your Personalized Coffee</div>
+    <div class="coffe-head__title">COFFEE BUILD YOUR BASE</div>
+  </div>
+  <div class="row coffe-body">
+    <div class="col-12 col-md-6 col-lg-3 coffe-body__item shows">
+      <img src="images/1/04.svg" alt="">
+      <div class="coffe-body__text text-center">
+        <div class="coffe-body__title">Nguồn gốc</div>
+        <div class="coffe-body__text">Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu chuẩn quốc tế.</div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3 coffe-body__item shows">
+      <img src="images/1/03.svg" alt="">
+      <div class="coffe-body__text text-center">
+        <div class="coffe-body__title">Chất lượng</div>
+        <div class="coffe-body__text">Từng một hạt cà phê là cả một quá trình tập trung cao độ của nghệ nhân cà phê.</div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3 coffe-body__item shows">
+      <img src="images/1/IC.svg" alt="">
+      <div class="coffe-body__text text-center">
+        <div class="coffe-body__title">Các loại hạt</div>
+        <div class="coffe-body__text">70% chất lượng tách cà phê đến từ nguồn gốc và chất lượng green bean.</div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3 coffe-body__item shows">
+      <img src="images/1/02.svg" alt="">
+      <div class="coffe-body__text text-center">
+        <div class="coffe-body__title">Pha chế</div>
+        <div class="coffe-body__text">Những hạt cà phê được lột xác qua quá trình rang xay kỹ lưỡng và nghiêm ngặt.</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="products py-5">
+<div class="products-head shows pb-5 text-center">
+  <div class="products-head__subtitle">Choose Your Favorite</div>
+  <div class="products-head__title">CHUẨN GU ĐÚNG VỊ</div>
+
+</div>
+<div class="products-body container1 container-lg ">
+  <div class="products__body swiper-container">
+    <div class="row row1 swiper-wrapper">
+      <div class="products-item  col-12 col-md-auto d-block d-md-flex swiper-slide">
+        <div class="products-item__img">
+          <img src="images/else/image.jpg" alt="">
+        </div>
+        <div class="products-item__content">
+          <div class="products-item__price">99.000</div>
+          <div class="products-item__price2"></div>
+          <div class="products-item__title">REVO Morning</div>
+          <div class="products-item__sub">đắng, hậu ngọt, hương hoa </div>
+          <div class="products-item-buttons">
+            <button class="btn products-item-buttons__btn1">MUA NGAY</button>
+            <span class="products-item-buttons__btn2">CHI TIẾT</span>
+          </div>
+        </div>
+            </div>
+     <div class="products-item  col-12 col-md-auto d-block d-md-flex swiper-slide">
+              <div class="products-item__img">
+                <img src="images/else/image2.jpg" alt="">
+              </div>
+              <div class="products-item__content">
+                <div class="products-item__price">85.000</div>
+                <div class="products-item__price2"></div>
+                <div class="products-item__title">REVO Everyday</div>
+                <div class="products-item__sub">cân bằng, hậu đắng, vị chocolate  </div>
+                <div class="products-item-buttons">
+                  <button class="btn products-item-buttons__btn1">MUA NGAY</button>
+                  <span class="products-item-buttons__btn2">CHI TIẾT</span>
+                </div>
+              </div>
+             </div>
+       <div class="products-item   col-12 col-md-auto d-block d-md-flex swiper-slide">
+              <div class="products-item__img">
+                <img src="images/else/image2.jpg" alt="">
+              </div>
+              <div class="products-item__content">
+                <div class="products-item__price">85.000</div>
+                <div class="products-item__price2"></div>
+                <div class="products-item__title">REVO Everyday</div>
+                <div class="products-item__sub">cân bằng, hậu đắng, vị chocolate  </div>
+                <div class="products-item-buttons">
+                  <button class="btn products-item-buttons__btn1">MUA NGAY</button>
+                  <span class="products-item-buttons__btn2">CHI TIẾT</span>
+                </div>
+              </div>
+         </div>        
+    </div>
+
+  </div>
+  <div class="products-body__btn">
+    <img src="images/else/arrow-pointing-to-right.svg" alt="">
+  </div>
+  <div class="products__body swiper-container">
+    <div class="row row1 swiper-wrapper">
+      <div class="products-item   col-12 col-md-auto d-block d-md-flex swiper-slide">
+        <div class="products-item__img">
+          <img src="images/else/image1.png" alt="">
+        </div>
+        <div class="products-item__content">
+          <div class="products-item__price">199.000</div>
+          <div class="products-item__title">REVO Morning</div>
+          <div class="products-item__sub">đắng, hậu ngọt, hương hoa </div>
+          <div class="products-item-buttons">
+            <button class="btn products-item-buttons__btn1">MUA NGAY</button>
+            <span class="products-item-buttons__btn2">CHI TIẾT</span>
+          </div>
+        </div>
+            </div>
+     <div class="products-item   col-12 col-md-auto d-block d-md-flex swiper-slide">
+              <div class="products-item__img">
+                <img src="images/else/image3.jpg" alt="">
+              </div>
+              <div class="products-item__content">
+                <div class="products-item__price">75.000</div>
+                <div class="products-item__title">REVO Classic</div>
+                <div class="products-item__sub">cân bằng, hậu đắng, vị chocolate  </div>
+                <div class="products-item-buttons">
+                  <button class="btn products-item-buttons__btn1">MUA NGAY</button>
+                  <span class="products-item-buttons__btn2">CHI TIẾT</span>
+                </div>
+              </div>
+             </div>
+       <div class="products-item   col-12 col-md-auto  d-block d-md-flex swiper-slide">
+              <div class="products-item__img">
+                <img src="images/else/image3.jpg" alt="">
+              </div>
+              <div class="products-item__content">
+                <div class="products-item__price">25.000</div>
+                <div class="products-item__title">REVO Everyday</div>
+                <div class="products-item__sub">cân bằng, hậu đắng, vị chocolate  </div>
+                <div class="products-item-buttons">
+                  <button class="btn products-item-buttons__btn1">MUA NGAY</button>
+                  <span class="products-item-buttons__btn2">CHI TIẾT</span>
+                </div>
+              </div>
+         </div>        
+    </div>
+
+  </div>
+  
+</div>
+</div>
+
+<div class="giftset py-5">
+  <div class="giftset-head text-center p-5">
+    <div class="giftset-head__sub">Best Gift For Best Friend</div>
+    <div class="giftset-head__title">GIFTSET</div>
+  </div>
+  <div class="giftset-body shows position-relative justify-content-center d-block d-md-flex">
+    <div class="giftset-body-item d-lg-flex  text-center text-lg-start active " data-tab-content="1">
+      <div class="giftset-body-item__img">
+        <img src="images/footer/pr-0018-r.jpg" alt="">
+      </div>
+      <div class="giftset-body-item__content">
+        <div class="giftset-body-item__price">285.000</div>
+        <div class="giftset-body-item__title">Giftset "Cà phê phin Việt Nam"</div>
+        <div class="giftset-body-item__desc">Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh khiết chỉ dành riêng cho bạn.</div>
+        <div class="giftset-body-item-icons d-flex justify-content-between">
+          <div class="giftset-body-item-icons__icon d-block d-lg-flex">
+            <img src="images/footer/cofe.svg" alt="">
+            <div class="giftset-body-item-icons__text">
+              <div class="giftset-body-item-icons__title">Loại hạt
+               </div>
+              <div class="giftset-body-item-icons__subtitle"> Fine Robusta Blend</div>
+            </div>
+          </div>
+          <div class="giftset-body-item-icons__icon  d-block d-lg-flex">
+            <img src="images/footer/mountan.svg" alt="">
+            <div class="giftset-body-item-icons__text">
+              <div class="giftset-body-item-icons__title">Độ cao
+               </div>
+              <div class="giftset-body-item-icons__subtitle"> 700 - 800m</div>
+            </div>
+          </div>
+        </div>
+        <div class="products-item-buttons giftset-body-item-buttons">
+            <button class="btn products-item-buttons__btn1 giftset-body-item__btn">MUA NGAY</button>
+            <span class="products-item-buttons__btn2 giftset-body-item__btn2">CHI TIẾT</span>
+          </div>
+      </div>
+    </div>
+    <div class="giftset-body-item d-lg-flex  text-center text-lg-start " data-tab-content="2">
+      <div class="giftset-body-item__img">
+        <img src="images/footer/salo.png" alt="">
+      </div>
+      <div class="giftset-body-item__content">
+        <div class="giftset-body-item__price">1285.000</div>
+        <div class="giftset-body-item__title">Giftset "Cà phê phin Việt Nam"</div>
+        <div class="giftset-body-item__desc">Món quà tuyệt vời dành cho người yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh khiết chỉ dành riêng cho bạn.</div>
+        <div class="giftset-body-item-icons d-flex justify-content-between">
+          <div class="giftset-body-item-icons__icon d-block d-lg-flex">
+            <img src="images/footer/cofe.svg" alt="">
+            <div class="giftset-body-item-icons__text">
+              <div class="giftset-body-item-icons__title">Loại hạt
+               </div>
+              <div class="giftset-body-item-icons__subtitle"> Fine Robusta Blend</div>
+            </div>
+          </div>
+          <div class="giftset-body-item-icons__icon  d-block d-lg-flex">
+            <img src="images/footer/mountan.svg" alt="">
+            <div class="giftset-body-item-icons__text">
+              <div class="giftset-body-item-icons__title">Độ cao
+               </div>
+              <div class="giftset-body-item-icons__subtitle"> 700 - 800m</div>
+            </div>
+          </div>
+        </div>
+        <div class="products-item-buttons giftset-body-item-buttons">
+            <button class="btn products-item-buttons__btn1 giftset-body-item__btn">MUA NGAY</button>
+            <span class="products-item-buttons__btn2 giftset-body-item__btn2">CHI TIẾT</span>
+          </div>
+      </div>
+    </div>
+    <div class="giftset-body-item d-lg-flex  text-center text-lg-start " data-tab-content="3">
+      <div class="giftset-body-item__img">
+        <img src="images/footer/pr-0018-r.jpg" alt="">
+      </div>
+      <div class="giftset-body-item__content">
+        <div class="giftset-body-item__price">285.000</div>
+        <div class="giftset-body-item__title">3Giftset "Cà phê phin Việt Nam"</div>
+        <div class="giftset-body-item__desc">Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh khiết chỉ dành riêng cho 
+          phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh khiết chỉ dành riêng chobạn.</div>
+        <div class="giftset-body-item-icons d-flex justify-content-between">
+          <div class="giftset-body-item-icons__icon d-block d-lg-flex">
+            <img src="images/footer/cofe.svg" alt="">
+            <div class="giftset-body-item-icons__text">
+              <div class="giftset-body-item-icons__title">Loại hạt
+               </div>
+              <div class="giftset-body-item-icons__subtitle"> Fine Robusta Blend</div>
+            </div>
+          </div>
+          <div class="giftset-body-item-icons__icon  d-block d-lg-flex">
+            <img src="images/footer/mountan.svg" alt="">
+            <div class="giftset-body-item-icons__text">
+              <div class="giftset-body-item-icons__title">Độ cao
+               </div>
+              <div class="giftset-body-item-icons__subtitle"> 700 - 800m</div>
+            </div>
+          </div>
+        </div>
+        <div class="products-item-buttons giftset-body-item-buttons">
+            <button class="btn products-item-buttons__btn1 giftset-body-item__btn">MUA NGAY</button>
+            <span class="products-item-buttons__btn2 giftset-body-item__btn2">CHI TIẾT</span>
+          </div>
+      </div>
+    </div>
+  <div class="giftset-body-tabs d-flex flex-column">
+<a class="giftset-body-tabs__tab active" data-tab="1">1</a>
+<a class="giftset-body-tabs__tab" data-tab="2">2</a>
+<a class="giftset-body-tabs__tab" data-tab="3">3</a>
+  </div>
+  </div>
+
+</div>
+<div class="combo py-5">
+<div class="container">
+
+  <div class="giftset-head shows text-center p-5">
+    <div class="giftset-head__sub">Your Personalized Coffee</div>
+    <div class="giftset-head__title">COMBO PHIN PHÊ</div>
+  </div>
+  <div class="combo-body swiper-container">
+    <div class="combo__btn">
+      <img src="images/else/arrow-pointing-to-right.svg" alt="">
+    </div>
+  <div class="combo__body pb-5 row1 swiper-wrapper row">
+    
+  <div class="products-item  combo-item col-12 col-md-auto  d-flex flex-column swiper-slide">
+      <div class="products-item__img">
+        <img src="images/start/IMAGE.jpg" alt="">
+      </div>
+      <div class="products-item__content combo-item__content">
+        <div class="d-flex"> <div class="products-item__price combo-item__price">199.000 </div><div class =  "products-item__price2"> 165.000</div></div>
+        <div class="products-item__title">Combo Revo Đậm Đà</div>
+        <div class="products-item__sub combo-item__sub">Hàm lượng caffein trong Revo Đậm Đà đủ mạnh để làm bạn tỉnh táo làm việc... </div>
+        <div class="products-item-buttons">
+          <button class="btn products-item-buttons__btn1 combo-item-buttons__btn1">MUA NGAY</button>
+          <span class="products-item-buttons__btn2 combo-item-buttons__btn2">CHI TIẾT</span>
+        </div>
+      </div>
+     </div>
+     <div class="products-item  combo-item col-12 col-md-auto  d-flex flex-column swiper-slide">
+      <div class="products-item__img">
+        <img src="images/start/IMAGE2.jpg" alt="">
+      </div>
+      <div class="products-item__content combo-item__content">
+        <div class="products-item__price combo-item__price">156.000 <span>165.000</span></div>
+        <div class="products-item__title">Combo Revo Everyday</div>
+        <div class="products-item__sub combo-item__sub"> Revo Everyday được phối trộn giữa vị đắng của hạt Robusta và hương thơm... </div>
+        <div class="products-item-buttons">
+          <button class="btn products-item-buttons__btn1 combo-item-buttons__btn1">MUA NGAY</button>
+          <span class="products-item-buttons__btn2 combo-item-buttons__btn2">CHI TIẾT</span>
+        </div>
+      </div>
+     </div>
+     <div class="products-item  combo-item col-12 col-md-auto  d-flex flex-column swiper-slide">
+      <div class="products-item__img">
+        <img src="images/start/IMAGE3.jpg" alt="">
+      </div>
+      <div class="products-item__content combo-item__content">
+        <div class="products-item__price combo-item__price">275.000 <span>260.000</span></div>
+        <div class="products-item__title">Combo Revo Honey</div>
+        <div class="products-item__sub combo-item__sub">Honey – trong tên gọi Revo Honey đến từ phương pháp chế biến hạt Arabica... </div>
+        <div class="products-item-buttons">
+          <button class="btn products-item-buttons__btn1 combo-item-buttons__btn1">MUA NGAY</button>
+          <span class="products-item-buttons__btn2 combo-item-buttons__btn2">CHI TIẾT</span>
+        </div>
+      </div>
+     </div>    
+  </div>
+</div>
+</div>
+</div>
+
+<footer class="footer text-center">
+<div class="footer__text">© Revo Coffee Việt Nam - 2018</div>
+</footer>
+</div>
+
+<div class="storage">
+  <ul class="storage-content">
+    <li class="storage-item d-flex">
+      <div class="storage-item__img d-flex flex-column">
+        <img src="images/else/image2.jpg" class="" alt="">
+        <div class="storage-item-actions d-flex">
+          <div class="storage-item-actions__minus">
+            <img src="images/storage/minus-sign.svg" alt="">
+          </div>
+         
+          <div class="storage-item-actions__count">1</div>
+          <div class="storage-item-actions__plus">
+            <img src="images/storage/plus.svg" alt="">
+          </div>
+        </div>
+    </div>
+    <div class="storage-item__content">
+      <div class="storage-item__price">99.000
+      <span class="storage-item__price2">149.000</span>
+    </div>
+      <div class="storage-item__name">REVO Morning</div>
+      <div class="storage-item__desc">đắng, hậu ngọt, hương hoa </div>
+    </div>
+    <div class="storage-item__trash">
+      <img src="images/storage/rubbish-bin.svg" alt="">
+    </div>
+  </li>
+  <li class="storage-item d-flex">
+    <div class="storage-item__img d-flex flex-column">
+      <img src="images/else/image2.jpg" class="" alt="">
+      <div class="storage-item-actions d-flex">
+        <div class="storage-item-actions__minus">
+          <img src="images/storage/minus-sign.svg" alt="">
+        </div>
+       
+        <div class="storage-item-actions__count">1</div>
+        <div class="storage-item-actions__plus">
+          <img src="images/storage/plus.svg" alt="">
+        </div>
+      </div>
+  </div>
+  <div class="storage-item__content">
+    <div class="storage-item__price">99.000
+    <span class="storage-item__price2">149.000</span>
+  </div>
+    <div class="storage-item__name">REVO Morning</div>
+    <div class="storage-item__desc">đắng, hậu ngọt, hương hoa </div>
+  </div>
+  <div class="storage-item__trash">
+    <img src="images/storage/rubbish-bin.svg" alt="">
+  </div>
+</li>
+</ul>
+  <div class="storage-footer d-flex">
+    <div class="storage-footer__count">1</div>
+    <span class="storage-footer__sum">99.00</span>
+    <button class="btn storage-footer__btn">Купити</button>
+  </div>
+</div>
+
+<a href="" class="gotop-btn"> <img src="images/else/upwards-arrow.svg" alt=""></a>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+    
+<script type="module" src="js/main.min.js"></script>
+</body>
+</html>

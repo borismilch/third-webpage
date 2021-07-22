@@ -1,0 +1,103 @@
+.footer {
+    background-color: rgba(237, 240, 245, 1);
+    
+    // .footer__text
+
+    &__text {
+        padding: 20px 0px;
+        color: $black;
+        font-family: $naruto;
+        font-size: 16px;
+
+
+    }
+}
+.gotop-btn{
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $second;
+    right: 5%;
+    opacity: 0;
+    border-radius: 50%;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition:all 0.4s  ease;
+    bottom: 10%;
+    &:hover{
+        box-shadow: 0px 0px 7px $black;
+    }
+    &.active{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0%);
+    }
+    & img {
+        width: 25px;
+        height: 25px;
+    }
+}
+.quantity__indicator{
+                       
+     opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $second;
+    width: 15px;
+    height: 15px;
+    font-size: 11px;
+    border-radius: 50%;
+    position: absolute;
+    left: 55%;
+    top: -25%;
+    &.active{
+          opacity: 1;
+          visibility: visible;    
+    }
+}
+.cart-parent{
+    position: relative;
+   
+    z-index: 100;
+    &.active{
+    cursor: pointer;
+}}
+.nav-item{
+    padding: 0px 3px;
+    transition: 0.3s all ease;
+    border-radius: 5px;
+    margin: 0px 3px;
+    font-size: 16px;
+    & a{
+        transition: inherit;
+    }
+    &:hover{
+        background-color: $second;
+        & a{
+        color: white !important;
+       
+    }}
+}
+
+.btn:disabled{
+    opacity: 0.6;
+}
+.shows{
+    opacity: 0;
+    visibility: hidden;
+    transition: 1.3s all ease;
+    transform: translateY(-70%);
+    &.show{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0%);
+    }
+}

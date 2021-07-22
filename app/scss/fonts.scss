@@ -1,0 +1,21 @@
+
+@mixin fonti($font, $fontP){
+	font-family: $font;
+	src: url('../fonts/#{$font}.ttf');
+	src: local('☺'), url('../fonts/#{$fontP}.woff') format('woff'), url('../fonts/#{$fontP}.ttf') format('truetype'), url('../fonts/#{$fontP}.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+	};
+	$maxWidth: 1280;
+		@mixin adaptiv-font($pcSize, $mobSize) {
+		 $addSize: $pcSize - $mobSize;
+		 $maxWidth: $maxWidth - 320;
+		 font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+		} 	
+	@font-face {
+		@include fonti("Nunito-regular",Nunito-regular);
+	}
+	@font-face {
+		@include fonti("Montserrat", Montserrat);
+	}

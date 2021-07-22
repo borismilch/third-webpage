@@ -1,0 +1,31 @@
+
+
+
+   
+   
+   *,
+    *::before,
+    *::after{
+        box-sizing:  border-box;
+    }
+
+@import "../bootstrap/scss/bootstrap.scss";
+@import "vars.scss";
+@import "fonts.scss";
+@import "tools.scss";   
+@import "blocks/header.scss";
+@import "blocks/footer.scss";
+@import "blocks/page.scss";
+@import "blocks/coffe.scss";
+@import "blocks/products.scss";
+@import "blocks/giftset.scss";
+@import "blocks/combo.scss";
+@import "blocks/storage.scss";
+
+.body{
+  font-size: 14px;
+  margin: 0px;
+  overflow-x: hidden;
+  background-color:rgba(249, 251, 255, 1);
+  
+}
